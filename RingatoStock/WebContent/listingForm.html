@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Listing form</title>
+<style>
+table, td {
+  border: 1px solid black;
+}
+
+</style>
+</head>
+<body>
+<p>Click the button to add a new
+row at the first position of the table and then add cells and content.</p>
+	<table id="myTable">
+		<tr> 
+			<th>Title</th> 
+			<th>Quantity</th> 
+			<th>Author</th>
+			<th>Illustrator</th>
+			<th>Price</th>
+		</tr>
+	</table>
+	<br>
+
+<button onclick="myFunction()">Try it</button>
+	
+	<script>
+	function myFunction() {
+	  var table = document.getElementById("myTable");
+	  var row = table.insertRow(1);
+	  var cell0 = row.insertCell(0);
+	  var cell1 = row.insertCell(1);
+	  var cell2 = row.insertCell(2);
+	  var cell3 = row.insertCell(3);
+	  var cell4 = row.insertCell(4);
+	  cell0.innerHTML = "NEW CELL0";
+	  cell1.innerHTML = "NEW CELL1";
+	  cell2.innerHTML = "NEW CELL2";
+	  cell3.innerHTML = "NEW CELL3";
+	  cell4.innerHTML = "NEW CELL4";
+	}
+	</script>
+</body>
+</html>

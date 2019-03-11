@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-2">
+	<title>He's developing</title>
+	<style>
+		body{
+			width:1100px;
+			background:rgb(215, 215, 255);
+			max-width:95%;
+			margin: auto;			
+		}
+		h1{
+			float:left;
+			color:rgb(100,0,0);
+			margin:0;
+		}
+		header h2{
+			text-align:center;			
+			font-weight:normal;
+			color:rgb(0,150,175);
+			
+		}
+		section {
+			background:rgb(255,215,215);
+			padding:10px 100px;
+			
+		}
+		section h2{
+			text-align:center;
+			color:rgb(0,100,150);
+		}
+		section p{
+			color:rgb(0,150,50);
+		}
+		article{
+			background:rgb(255,255,255);
+			float:left;
+			width:29.3%;
+			margin:1%;
+			padding:1%;
+			height:250px;
+		}
+		h3{
+			color:rgb(45,45,45);			
+		}
+		article p{
+			color:rgb(75,75,75);
+		}
+		li{
+			color:rgb(75,75,75);
+		}
+		img{
+			<!--width: 100%;-->
+			padding:5px;
+		}
+		footer{
+			text-align:center;
+			background:rgb(175,175,175);
+			clear:left;
+			padding:25px;
+			
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Ringato.com<h1>
+		<h2>Upload form<h2>
+	</header>
+	<section>
+		<h2>This is the site where you will upload your data</h2>
+		<p>Please enter your name, answer the questions and your will receive your rank </p>
+	</section>
+	<article>
+		<h3>Here comes the form</h3>
+		<form method="POST" action="/RingatoStock/StockUpload">
+			<fieldset>
+			<legend>mandatory fields</legend>
+			Username:<br> 
+			<input type="text" name="username"><br> 
+			
+			Password:<br>
+			<input type="text" name="password"><br>
+			
+			Title:<br>
+			<input type="text" name="book-title"><br>
+			
+			Quantity:<br>
+			<input type="text" name="book-quantity"><br>
+			
+			Author<br>
+			<input type="text" name="book-author"><br>
+			
+			Illustrator<br>
+			<input type="text" name="book-illustrator"><br>
+			
+			Price<br>
+			<input type="text" name="price"><br>
+			
+			</fieldset>
+			<br>				
+			<input type="submit" value="Enter">
+		</form>
+	</article>
+		
+	<footer>
+		<p>www.ringato.hu</p>
+		<p>next</p>
+	</footer>
+
+</body>
+
+</html>
